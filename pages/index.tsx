@@ -4,30 +4,13 @@ import Image from 'next/image';
 import { Box, Button, Checkbox, Divider, FormControlLabel, InputLabel, MenuItem } from '@mui/material';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 import { AiOutlineSearch } from "react-icons/ai";
+import { MdLocationOn } from "react-icons/md";
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
     <LayoutHomePage  title='Gold Brick'>
-    <nav className="site-nav">
-      <ul className="site-nav__list">
-        <li>
-          <Image
-            src="/images/icono.png"
-            alt="Banner"
-            width={120}
-            height={120}
-          />
-        </li>
-        <li className="site-nav__item"><a href="#" className="site-nav__link">HOME</a></li>
-        <li className="site-nav__item"><a href="#" className="site-nav__link">SERVICE</a></li>
-        <li className="site-nav__item"><a href="#" className="site-nav__link">NOSOTROS</a></li>
-        <li className="site-nav__item"><a href="#" className="site-nav__link">PROYECTOS</a></li>
-        <li className="site-nav__item"><a href="#" className="site-nav__link">INVERSIONES</a></li>
-        <li className="site-nav__item"><a href="#" className="site-nav__link">CONTACTO</a></li>
-      </ul>
-    </nav>
     <Box className="site-home">
       <Image
             src="/images/banner.jpg"
@@ -41,8 +24,15 @@ export default function Home() {
       </Box>
     </Box>
     <Box className="site-home-search">
+      <Image
+              src="/images/home-white-gold-brick.png"
+              alt="Banner"
+              width={169}
+              height={95}
+              className='site-home-search__image'
+            />
       <Box className="site-home-search__contain">
-        <h2 className="site-home-search__title mb-5">BUSCADOR</h2>
+        <h2 className="text-title mb-5">BUSCADOR</h2>
         <form className="site-home-search__form d-flex flex-row p-5 justify-content-between">
           <Box className="d-flex flex-column justify-content-between">
             <Button variant="contained" className='site-home-search__button background-color-cuaternario'>Comprar</Button>
@@ -55,6 +45,9 @@ export default function Home() {
                 labelId="demo-simple-select-autowidth-label"
                 id="ubicacion"
                 autoWidth
+                startAdornment={
+                  <MdLocationOn fontSize={40} />
+                }
                 label="Age"
               >
                 <MenuItem value="">
@@ -99,11 +92,15 @@ export default function Home() {
               </Select>
             </Box>
             <FormControlLabel className='ms-4 me-5 align-self-end mb-3' control={<Checkbox  />} label={<span className='text-normal'>No Fee</span>} />
-            <Button variant="contained" className='background-color-cuaternario'><AiOutlineSearch fontSize={70}/></Button>
+            <Button variant="contained" className='background-color-cuaternario mb-3'><AiOutlineSearch fontSize={70}/></Button>
           </Box>
         </form>
-
+        <p className='text-normal text-center mt-5'>Sujerencia de texto : Encuentra tu hogar ideal usando nuestro navegador inteligente</p>
       </Box>
+    </Box>
+    <Box className="site-home-service">
+      <p className="site-home-service__description">OPENNIG SOON</p>
+      <h3 className="site-home-service__title">S E R V I C I O S</h3>
     </Box>
     </LayoutHomePage>
   )

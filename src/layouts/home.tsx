@@ -2,6 +2,7 @@ import { ReactNode } from 'react';
 import { NextPage } from 'next';
 import Head from 'next/head'
 import LayoutHomePageProps from '../../interfaces/layouts/home'
+import Image from 'next/image';
 
 const LayoutHomePage: NextPage<LayoutHomePageProps> = ({ children, ...props }: LayoutHomePageProps) => {
   return (
@@ -12,7 +13,26 @@ const LayoutHomePage: NextPage<LayoutHomePageProps> = ({ children, ...props }: L
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
     </Head>
+    <nav className="site-nav">
+      <ul className="site-nav__list">
+        <li>
+          <Image
+            src="/images/icono.png"
+            alt="Banner"
+            width={140}
+            height={120}
+          />
+        </li>
+        <li className="site-nav__item"><a href="#" className="site-nav__link">HOME</a></li>
+        <li className="site-nav__item"><a href="#" className="site-nav__link">SERVICE</a></li>
+        <li className="site-nav__item"><a href="#" className="site-nav__link">NOSOTROS</a></li>
+        <li className="site-nav__item"><a href="#" className="site-nav__link">PROYECTOS</a></li>
+        <li className="site-nav__item"><a href="#" className="site-nav__link">INVERSIONES</a></li>
+        <li className="site-nav__item"><a href="#" className="site-nav__link">CONTACTO</a></li>
+      </ul>
+    </nav>
     <main>
+      
       {children}
     </main>
     </>

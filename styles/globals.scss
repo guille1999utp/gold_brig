@@ -2,8 +2,70 @@
 @import "./navbar.scss";
 @import "./layoutHome.scss";
 @import "./materia-modifications.scss";
+@import "./product.scss";
 
 *{
     padding: 0;
     margin: 0;
+}
+
+.text{
+    &-normal{
+        font-size: 1.5rem;
+        color: $color-terciario-oscuro;
+        &__big{
+            font-size: 1.5rem;    
+            color: $color-terciario-oscuro;
+            font-weight: 600;
+        }
+    }
+
+    &-bold{
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: $color-secundario-oscuro;
+    }
+
+    &-title{
+        color: $color-terciario-oscuro;
+        font-weight: 700;
+        letter-spacing: 2px;
+        font-size: 3rem;
+        letter-spacing: 3px;
+
+        &__product{
+            color: $color-terciario-oscuro;
+            letter-spacing: 2px;
+            font-size: 1.5rem;
+            font-weight: 400;
+
+            &-subtitle{
+                color: $color-secundario-oscuro;
+                font-size: 1.3rem;
+                font-weight: 600;
+            }
+        }
+    }
+
+    &-subtitle{
+        color: $color-terciario-oscuro;
+        letter-spacing: 2px;
+        font-size: 2rem;
+        letter-spacing: 5px;
+
+    }
+
+    &-infor{
+        color: $color-cuaternario;
+        letter-spacing: 2px;
+        font-size: 2rem;
+        letter-spacing: 5px;
+
+    }
+
+    &-description{
+        color: $color-terciario-oscuro;
+        font-size: 1.3rem;
+
+    }
 }
