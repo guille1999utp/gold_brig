@@ -3,6 +3,7 @@ import { NextPage } from 'next';
 import Head from 'next/head'
 import LayoutHomePageProps from '../../interfaces/layouts/home'
 import Image from 'next/image';
+import Footer from '../components/footer';
 
 const LayoutAllPage: NextPage<LayoutHomePageProps> = ({ children, ...props }: LayoutHomePageProps) => {
   return (
@@ -35,6 +36,7 @@ const LayoutAllPage: NextPage<LayoutHomePageProps> = ({ children, ...props }: La
     <main>
       {children}
     </main>
+    <Footer></Footer>
     </>
   );
 };

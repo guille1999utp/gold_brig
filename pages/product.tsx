@@ -1,10 +1,9 @@
-import { Inter } from 'next/font/google';
 import Image from 'next/image';
 import { Box, Grid} from '@mui/material';
 import LayoutAllPage from '@/src/layouts/layoutAllPage';
 import StyledDivider from '@/src/stylesComponent/divider';
 
-export default function Home() {
+export default function Product() {
   return (
     <LayoutAllPage  title='Gold Brick'>
         <Box className="ms-5">
