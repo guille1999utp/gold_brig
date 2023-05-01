@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { Box, Grid} from '@mui/material';
 import LayoutAllPage from '@/src/layouts/layoutAllPage';
-import StyledDivider from '@/src/stylesComponent/divider';
+import { StyledDividerHorizontal} from '@/src/stylesComponent/divider';
 
 export default function Product() {
   return (
@@ -42,7 +42,7 @@ export default function Product() {
                         <h4 className="text-bold text-center mb-0">UBICACION</h4>
                         <p className="text-center text-normal__big">West Palm Beach, 27th Road</p>
                     </Box>
-                    <StyledDivider className="mb-5" />
+                    <StyledDividerHorizontal className="mb-5" />
                     <Box className="d-flex flex-row justify-content-between flex-wrap mb-4">
                         <Box className="d-flex flex-row me-3">
                             <p className='text-title__product-subtitle me-3 fs-5'>AREA</p><span className='text-normal__big fs-5 fw-normal mb-2'>2000 m2</span>
@@ -65,7 +65,7 @@ export default function Product() {
                             <p className='text-title__product-subtitle me-3 fs-5'>TERRAZA</p><span className='text-normal__big fs-5 fw-normal mb-2'>1</span>
                         </Box>
                     </Box>
-                    <StyledDivider className="mb-5" />
+                    <StyledDividerHorizontal className="mb-5" />
                     <Box className="d-flex flex-row justify-content-between flex-wrap mb-5">
                         <Box className="d-flex flex-column me-3">
                             <p className='text-title__product-subtitle  text-center fs-5'>ADMINISTRACION</p><span className='text-normal__big text-center fs-5 fw-medium mb-2'>$1.500.000</span>
@@ -77,7 +77,7 @@ export default function Product() {
                             <p className='text-title__product-subtitle  text-center fs-5'>AÑO DE LA CASA</p><span className='text-normal__big text-center fs-5 fw-medium mb-2'>2014</span>
                         </Box>
                     </Box>
-                    <StyledDivider />
+                    <StyledDividerHorizontal />
                     <h4 className='text-title__product-subtitle mt-4 mb-3 text-center'>CARACTERISTICAS</h4>
                     <ul>
                         <li className='text-description'>
