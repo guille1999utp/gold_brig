@@ -5,6 +5,7 @@
 @import "./product.scss";
 @import "./footer.scss";
 @import "./search.scss";
+@import "./fonts.scss";
 
 
 *{
@@ -21,6 +22,14 @@
             color: $color-terciario-oscuro;
             font-weight: 600;
         }
+    }
+
+    &-Amarai-Light{
+        font-family: "Amarai-Light";
+    }
+
+    &-Amarai-Regular{
+        font-family: "Amarai-Regular";
     }
 
     &-bold{
@@ -71,4 +80,17 @@
         font-size: 1.3rem;
 
     }
+}
+
+.ornament-text-yellow{
+    &::after{
+        margin-left: 20px;
+        position: absolute;
+        top: 50%;
+        content: " ";
+        width: 65%;
+        height: 2px;
+        background-color: #856106;
+    }
+    
 }

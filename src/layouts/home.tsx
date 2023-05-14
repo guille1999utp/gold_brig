@@ -24,9 +24,9 @@ const LayoutHomePage: NextPage<LayoutHomePageProps> = ({ children, ...props }: L
             height={120}
           />
         </li>
-        <li className="site-nav__item"><a href="#" className="site-nav__link">HOME</a></li>
-        <li className="site-nav__item"><a href="#" className="site-nav__link">SERVICE</a></li>
         <li className="site-nav__item"><a href="#" className="site-nav__link">NOSOTROS</a></li>
+        <li className="site-nav__item"><a href="#" className="site-nav__link">PROPIEDADES</a></li>
+        <li className="site-nav__item"><a href="#" className="site-nav__link">SERVICIOS</a></li>
         <li className="site-nav__item"><a href="#" className="site-nav__link">PROYECTOS</a></li>
         <li className="site-nav__item"><a href="#" className="site-nav__link">INVERSIONES</a></li>
         <li className="site-nav__item"><a href="#" className="site-nav__link">CONTACTO</a></li>
@@ -36,7 +36,6 @@ const LayoutHomePage: NextPage<LayoutHomePageProps> = ({ children, ...props }: L
       
       {children}
     </main>
-    <Footer></Footer>
     </>
   );
 };

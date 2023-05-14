@@ -7,10 +7,13 @@ const Footer: NextPage = () => {
   return (
     <footer className='site-footer'>
         <Box className="site-footer-content">
-            <h4 className='text-center text-light fw-normal fs-1 site-footer-content-title-complete mb-5'>SOBRE <span className="site-footer-content-title">GOLD BRICK</span></h4>
-            <Box className="d-flex flex-row justify-content-center pt-5 flex-wrap" >
+            <Box className="d-flex flex-row justify-content-between">
+                <h5 className='text-light fs-3 fw-bolder mb-5'>NUESTRA META</h5>
+                <h4 className='text-center text-light fw-normal fs-1 site-footer-content-title-complete mb-5'>SOBRE <span className="site-footer-content-title ms-3">GOLD BRICK</span></h4>
+
+            </Box>
+            <Box className="d-flex flex-row justify-content-between pt-5 flex-wrap" >
                 <Box className="d-flex flex-column site-footer-line-vertical">
-                    <h5 className='text-light fs-3 fw-bolder mb-5'>NUESTRA META</h5>
                     <p className='site-footer-parrafo' style={{maxWidth:"300px"}}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                      Ut enim ad minim veniam, quis nostrud exbercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.

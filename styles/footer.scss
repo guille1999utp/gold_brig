@@ -1,5 +1,5 @@
 .site-footer{
-    background: $color-sextiario;
+    background: $color-cuaternario;
     padding: 100px 0;
     margin-top: 100px;
 
@@ -17,7 +17,7 @@
         }
     }
     .site-footer-content-title-complete{
-        letter-spacing: 6px;
+        font-family: "Amarai-Bold";
 
         .site-footer-content-title{
             color: $color-footer-letter;
@@ -25,12 +25,13 @@
     }
 
     .site-footer-parrafo{
-        color: $color-secundario;
-        font-size: 1.2rem;
+        color: white;
+        font-family: 'Amarai-Light';
+        font-size: 1.3rem;
     }
 
     .site-footer-content{
-        width: 70%;
+        width: 80%;
         margin: auto;
     }
 }
