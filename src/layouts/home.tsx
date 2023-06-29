@@ -1,11 +1,12 @@
-import { ReactNode } from 'react';
 import { NextPage } from 'next';
 import Head from 'next/head'
 import LayoutHomePageProps from '../../interfaces/layouts/home'
 import Image from 'next/image';
-import Footer from '../components/footer';
+import { useRouter } from 'next/router';
 
 const LayoutHomePage: NextPage<LayoutHomePageProps> = ({ children, ...props }: LayoutHomePageProps) => {
+  const router = useRouter();
+  const currentPath = router.pathname;
   return (
     <>
     <Head>
@@ -18,10 +19,11 @@ const LayoutHomePage: NextPage<LayoutHomePageProps> = ({ children, ...props }: L
       <ul className="site-nav__list">
         <li>
           <Image
-            src="/images/icono.png"
+            src={currentPath == "/" ?"/images/icono.png":"/images/icono-pagina-removebg-preview.png"}
             alt="Banner"
             width={140}
             height={120}
+            className={currentPath == "/" ?" ":"mt-2"}
           />
         </li>
         <li className="site-nav__item"><a href="#" className="site-nav__link">NOSOTROS</a></li>
