@@ -1,11 +1,18 @@
 import Image from 'next/image';
 import { Box, Grid} from '@mui/material';
+
+import LayoutAllPage from '@/src/layouts/layoutAllPage';
 import LayoutHomePage from '@/src/layouts/home';
 import { StyledDividerHorizontal} from '@/src/stylesComponent/divider';
 
 export default function Product() {
   return (
     <LayoutHomePage  title='Gold Brick'>
+
+        <Box className="ms-5">
+        <p className="text-subtitle mb-0 mt-4">INMUEBLES</p>
+        <h2 className="text-title mb-5">DESTACADOS</h2>
+        </Box>
         <Grid container spacing={4} className='px-5'>
             <Grid item xs={7}>
                 

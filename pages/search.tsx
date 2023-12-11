@@ -1,15 +1,13 @@
 
-import LayoutAllPage from '@/src/layouts/layoutAllPage';
 import { Box } from '@mui/material';
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
-import Image from 'next/image';
-import { StyledDividerHorizontal, StyledDividerVertical} from '@/src/stylesComponent/divider';
 import ProductCard from '@/src/components/productCard';
+import LayoutHomePage from '@/src/layouts/home';
 
 export default function Search() {
   return (
-    <LayoutAllPage  title='Gold Brick'>
-      <Box className="site-search">
+    <LayoutHomePage  title='Gold Brick'>
+      <Box className="site-search mt-5">
         <Box className="site-search-background">
           <Box className="d-flex flex-row position-absolute" sx={{zIndex:2,top:"calc(15vh - 25px)"}}>
             <AiOutlineArrowLeft className='site-search-icons' color='white' fontSize={50}/>
@@ -40,6 +38,6 @@ export default function Search() {
         
 
       </Box>
-    </LayoutAllPage>
+    </LayoutHomePage>
   )
 }
