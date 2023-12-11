@@ -3,9 +3,11 @@ import { NextPage } from 'next';
 import Head from 'next/head'
 import LayoutHomePageProps from '../../interfaces/layouts/home'
 import Image from 'next/image';
-import Footer from '../components/footer';
+import { useRouter } from 'next/router';
 
 const LayoutHomePage: NextPage<LayoutHomePageProps> = ({ children, ...props }: LayoutHomePageProps) => {
+  const router = useRouter();
+  const ruta: string = router.pathname;
   return (
     <>
     <Head>
@@ -17,12 +19,14 @@ const LayoutHomePage: NextPage<LayoutHomePageProps> = ({ children, ...props }: L
     <nav className="site-nav">
       <ul className="site-nav__list">
         <li>
-          <Image
+          {(ruta === "/")?<Image
             src="/images/icono.png"
             alt="Banner"
             width={140}
             height={120}
-          />
+          />:<span style={{fontSize:"70px",color:"#DDA749"}}>
+              GB
+            </span>}
         </li>
         <li className="site-nav__item"><a href="#" className="site-nav__link">NOSOTROS</a></li>
         <li className="site-nav__item"><a href="#" className="site-nav__link">PROPIEDADES</a></li>
